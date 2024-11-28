@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MuseuAPI</name>
+    </assembly>
+    <members>
+        <member name="T:MuseuAPI.Controllers.ObrasController">
+            <summary>
+            Controlador para gerenciar as obras da exposição.
+            </summary>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.#ctor(MuseuAPI.Services.Interfaces.IObraService)">
+            <summary>
+            Construtor do controlador de obras.
+            </summary>
+            <param name="obraService">Serviço responsável pela lógica de obras.</param>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.GetObras">
+            <summary>
+            Obtém todas as obras da exposição.
+            </summary>
+            <returns>Uma lista de todas as obras disponíveis.</returns>
+            <response code="200">Retorna a lista de obras.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.GetObraById(System.Int32)">
+            <summary>
+            Obtém os detalhes de uma obra específica.
+            </summary>
+            <param name="id">O ID da obra.</param>
+            <returns>Os detalhes da obra solicitada.</returns>
+            <response code="200">Retorna os detalhes da obra, incluindo a imagem.</response>
+            <response code="404">Se a obra não for encontrada.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.AddObra(MuseuAPI.Dtos.ObraDto)">
+            <summary>
+            Adiciona uma nova obra à exposição.
+            </summary>
+            <param name="obra">Os dados da obra a ser criada.</param>
+            <returns>A obra criada, incluindo o ID gerado.</returns>
+            <response code="201">Retorna a obra criada.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.UpdateObra(System.Int32,MuseuAPI.Dtos.ObraDto)">
+            <summary>
+            Atualiza uma obra existente.
+            </summary>
+            <param name="id">O ID da obra a ser atualizada.</param>
+            <param name="obra">Os novos dados da obra.</param>
+            <returns>Status da operação.</returns>
+            <response code="204">Atualização realizada com sucesso.</response>
+            <response code="404">Se a obra não for encontrada.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.ObrasController.DeleteObra(System.Int32)">
+            <summary>
+            Exclui uma obra.
+            </summary>
+            <param name="id">O ID da obra a ser excluída.</param>
+            <returns>Status da operação.</returns>
+            <response code="204">Exclusão realizada com sucesso.</response>
+            <response code="404">Se a obra não for encontrada.</response>
+        </member>
+        <member name="T:MuseuAPI.Controllers.QuestionariosController">
+            <summary>
+            Controlador para gerenciar as respostas dos questionários.
+            </summary>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.#ctor(MuseuAPI.Services.Interfaces.IQuestionarioService)">
+            <summary>
+            Construtor do controlador de questionários.
+            </summary>
+            <param name="questionarioService">Serviço responsável pela lógica dos questionários.</param>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.GetRespostas">
+            <summary>
+            Obtém todas as respostas do questionário.
+            </summary>
+            <returns>Uma lista de todas as respostas registradas.</returns>
+            <response code="200">Retorna a lista de respostas.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.AddResposta(MuseuAPI.Dtos.QuestionarioDto)">
+            <summary>
+            Adiciona uma nova resposta ao questionário.
+            </summary>
+            <param name="resposta">Os dados da nova resposta.</param>
+            <returns>A resposta criada, incluindo o ID gerado.</returns>
+            <response code="201">Retorna a resposta criada.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.GetRelatorio">
+            <summary>
+            Obtém um relatório com a análise das respostas.
+            </summary>
+            <returns>Um relatório com as porcentagens de satisfação.</returns>
+            <response code="200">Retorna o relatório de satisfação.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.UpdateResposta(System.Int32,MuseuAPI.Dtos.QuestionarioDto)">
+            <summary>
+            Atualiza uma resposta do questionário.
+            </summary>
+            <param name="id">O ID da resposta a ser atualizada.</param>
+            <param name="resposta">Os novos dados da resposta.</param>
+            <returns>Status da operação.</returns>
+            <response code="204">Atualização realizada com sucesso.</response>
+            <response code="404">Se a resposta não for encontrada.</response>
+        </member>
+        <member name="M:MuseuAPI.Controllers.QuestionariosController.DeleteResposta(System.Int32)">
+            <summary>
+            Exclui uma resposta do questionário.
+            </summary>
+            <param name="id">O ID da resposta a ser excluída.</param>
+            <returns>Status da operação.</returns>
+            <response code="204">Exclusão realizada com sucesso.</response>
+            <response code="404">Se a resposta não for encontrada.</response>
+        </member>
+        <member name="T:MuseuAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MuseuAPI.Migrations.AddImagemUrlToObra">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemUrlToObra.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemUrlToObra.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemUrlToObra.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MuseuAPI.Migrations.AddImagemToObra">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemToObra.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemToObra.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.AddImagemToObra.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
