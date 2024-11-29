@@ -37,6 +37,17 @@ void ConfigureServices(IServiceCollection services, string connectionString)
     services.AddScoped<IObraRepository, ObraRepository>();
     services.AddScoped<IQuestionarioRepository, QuestionarioRepository>();
 
+    // Configuração de CORS para permitir qualquer origem
+    services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
+    });
+
     // Controladores e Swagger
     services.AddControllers();
     services.AddEndpointsApiExplorer();
@@ -70,6 +81,9 @@ void ConfigurePipeline(WebApplication app)
             c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Museu Multitemático v1");
         });
     }
+
+    // Configuração do CORS
+    app.UseCors("AllowAll");
 
     // Segurança e Controladores
     app.UseHttpsRedirection();

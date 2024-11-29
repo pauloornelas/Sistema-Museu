@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JOkbRIpyKOhh4E1KY9arImwN2SbzwE8gXX6nyng9s51kIhKglY6cIdy3uRb0EWodc/H2TgkVNMVGptElwvoi9w==",
+  "dgSpecHash": "RjGmkAjZEyPvhOKKPLzcQnrpf3L6otgGtjMC2wAFRpm8JhNPndKggY8Mh2xBMMHUM+MWhglUzcLRi99mDotDDw==",
   "success": true,
-  "projectFilePath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/MuseuAPI.csproj",
+  "projectFilePath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/MuseuAPI.csproj",
   "expectedPackageFiles": [
     "/home/paulo-ornelas/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/paulo-ornelas/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

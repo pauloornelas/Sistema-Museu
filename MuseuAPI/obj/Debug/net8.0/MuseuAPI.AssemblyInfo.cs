@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuseuAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a940518d6437f38f5800191eb626049f861934c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuseuAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuseuAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

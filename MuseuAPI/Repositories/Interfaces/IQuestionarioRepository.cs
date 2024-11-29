@@ -1,6 +1,6 @@
+using MuseuAPI.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MuseuAPI.Entities;
 
 namespace MuseuAPI.Repositories.Interfaces
 {

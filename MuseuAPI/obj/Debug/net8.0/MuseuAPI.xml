@@ -63,52 +63,25 @@
             Controlador para gerenciar as respostas dos questionários.
             </summary>
         </member>
-        <member name="M:MuseuAPI.Controllers.QuestionariosController.#ctor(MuseuAPI.Services.Interfaces.IQuestionarioService)">
-            <summary>
-            Construtor do controlador de questionários.
-            </summary>
-            <param name="questionarioService">Serviço responsável pela lógica dos questionários.</param>
-        </member>
         <member name="M:MuseuAPI.Controllers.QuestionariosController.GetRespostas">
             <summary>
             Obtém todas as respostas do questionário.
             </summary>
-            <returns>Uma lista de todas as respostas registradas.</returns>
-            <response code="200">Retorna a lista de respostas.</response>
         </member>
         <member name="M:MuseuAPI.Controllers.QuestionariosController.AddResposta(MuseuAPI.Dtos.QuestionarioDto)">
             <summary>
             Adiciona uma nova resposta ao questionário.
             </summary>
-            <param name="resposta">Os dados da nova resposta.</param>
-            <returns>A resposta criada, incluindo o ID gerado.</returns>
-            <response code="201">Retorna a resposta criada.</response>
-        </member>
-        <member name="M:MuseuAPI.Controllers.QuestionariosController.GetRelatorio">
-            <summary>
-            Obtém um relatório com a análise das respostas.
-            </summary>
-            <returns>Um relatório com as porcentagens de satisfação.</returns>
-            <response code="200">Retorna o relatório de satisfação.</response>
         </member>
         <member name="M:MuseuAPI.Controllers.QuestionariosController.UpdateResposta(System.Int32,MuseuAPI.Dtos.QuestionarioDto)">
             <summary>
-            Atualiza uma resposta do questionário.
+            Atualiza uma resposta existente no questionário.
             </summary>
-            <param name="id">O ID da resposta a ser atualizada.</param>
-            <param name="resposta">Os novos dados da resposta.</param>
-            <returns>Status da operação.</returns>
-            <response code="204">Atualização realizada com sucesso.</response>
-            <response code="404">Se a resposta não for encontrada.</response>
         </member>
         <member name="M:MuseuAPI.Controllers.QuestionariosController.DeleteResposta(System.Int32)">
             <summary>
             Exclui uma resposta do questionário.
             </summary>
-            <param name="id">O ID da resposta a ser excluída.</param>
-            <returns>Status da operação.</returns>
-            <response code="204">Exclusão realizada com sucesso.</response>
-            <response code="404">Se a resposta não for encontrada.</response>
         </member>
         <member name="T:MuseuAPI.Migrations.InitialCreate">
             <inheritdoc />
@@ -144,6 +117,18 @@
             <inheritdoc />
         </member>
         <member name="M:MuseuAPI.Migrations.AddImagemToObra.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MuseuAPI.Migrations.UpdateQuestionarioSchema">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.UpdateQuestionarioSchema.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.UpdateQuestionarioSchema.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MuseuAPI.Migrations.UpdateQuestionarioSchema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

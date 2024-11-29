@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/MuseuAPI.csproj": {}
+    "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/MuseuAPI.csproj": {}
   },
   "projects": {
-    "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/MuseuAPI.csproj": {
+    "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/MuseuAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/MuseuAPI.csproj",
+        "projectUniqueName": "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/MuseuAPI.csproj",
         "projectName": "MuseuAPI",
-        "projectPath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/MuseuAPI.csproj",
+        "projectPath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/MuseuAPI.csproj",
         "packagesPath": "/home/paulo-ornelas/.nuget/packages/",
-        "outputPath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/MuseuMultitematico/MuseuAPI/obj/",
+        "outputPath": "/home/paulo-ornelas/Área de trabalho/Nova pasta/Repo/Sistema-Museu/MuseuAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/paulo-ornelas/.nuget/NuGet/NuGet.Config"
